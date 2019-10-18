@@ -10,6 +10,6 @@ Example usage:
 ```
 from pseg import Meter
 
-meter = Meter("17baf96d8fdc0abcded2cf428b74d3151")
-gas_consumption_therms = meter.last_gas_consumption_read("bRWWRMk6PCka1MQ%2BabcedpaZxxMafUhDSQoaRDvDC1Aw%3D%3D")
+meter = Meter("17baf96d8fdc0abcded2cf428b74d3151", "bRWWRMk6PCka1MQ%2BabcedpaZxxMafUhDSQoaRDvDC1Aw%3D%3D")
+gas_consumption_therms = meter.last_gas_consumption_read()
 ```
