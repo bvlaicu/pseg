@@ -1,6 +1,8 @@
 """PSE&G Gas Meter"""
 import requests
-import logging as _LOGGER
+import logging
+
+_LOGGER = logging.getLogger(__name__)
 
 
 class MeterError(Exception):
