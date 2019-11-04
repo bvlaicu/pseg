@@ -31,7 +31,7 @@ class Meter(object):
             headers = {"Cookie": "_energize_session=%s; EMSSESSIONID=%s;" % (self.energize_id, self.session_id)}
             _LOGGER.debug("headers = %s", headers)
 
-            response = requests.get(url, headers=headers)
+            response = requests.get(url, headers=headers, timeout=10)
             _LOGGER.debug("response = %s", response)
 
             jsonResponse = response.json()
